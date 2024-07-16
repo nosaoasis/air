@@ -1,0 +1,33 @@
+.callList {
+  height: 23.6rem; /* Set a height to enable scrolling */
+  overflow-y: scroll;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.callList::-webkit-scrollbar {
+  width: 5px; /* Set the width of the scrollbar */
+}
+
+.callList::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background of the scrollbar track */
+}
+
+.callList::-webkit-scrollbar-thumb {
+  background: #888; /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Optional: Add rounded corners to the scrollbar thumb */
+}
+
+.callList::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the color of the scrollbar thumb when hovered */
+}
+
+/* For Firefox */
+.callList {
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-color: white white; /* Set the color of the scrollbar thumb and track */
+}
+
+/* For IE and Edge */
+.callList {
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide the scrollbar when not in use */
+}
